@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import './NavBar.css';
+
 
 
 class NavBar extends Component {
   render() {
     return (
-      <div className="nav-bar">
-        <Link to="/">Home</Link>{' / '}
-        <Link to="/about">About Us</Link>{' / '}
-        <Link to="/OurQuality">Our Quality</Link>{' / '}
-        <Link to="/contact">Contact US</Link>{' / '}
-        <Link to="/Quote">Request a Quote</Link>{' / '}
-      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Contact">Contact</a></li>
+        <li><a href="/OurQuality">Quality</a></li>
+        <li><a href="/About">About Us</a></li>
+        <li><a href="/Quote">Quote</a></li>
+      </ul>
     )
   }
 }
